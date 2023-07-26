@@ -1,6 +1,6 @@
 # 抖音弹幕点歌
 
-## Project setup
+## 安装
 ```
 npm install
 ```
