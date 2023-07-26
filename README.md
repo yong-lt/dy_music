@@ -5,15 +5,20 @@
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 修改主程序启动地址
 ```
-npm run serve
+// main.js
+// 打包后资源路径
+mainWin.loadFile(path.join(__dirname, "./dist/index.html"));
+// 开发时链接
+// mainWin.loadURL("http://localhost:8080");
 ```
 
-### Compiles and minifies for production
+### 启动项目
 ```
-npm run build
-```
+// 启动前端页面
+npm run dev
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+// 启动Electron
+npm run client
+```
